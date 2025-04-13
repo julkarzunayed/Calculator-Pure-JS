@@ -59,9 +59,11 @@ main h1>span{
     margin: 2px;
 }
 #text-box{
-    /* border: solid 1px; */
+    border: solid 1px;
     flex-grow: 1;
-    /* border-radius: 5px; */
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
 }
 .container-box{
     /* border: solid 1px tomato; */
