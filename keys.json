@@ -1,0 +1,22 @@
+[
+    {"id": 1, "key": "C", "class": "f-key" },
+    {"id": 2, "key": "&#8592;", "class": "f-key" },
+    {"id": 3, "key": "%", "class": "f-key" },
+    {"id": 4, "key": "/", "class": "f-key" },
+    {"id": 5, "key": "7", "class": "number" },
+    {"id": 6, "key": "8", "class": "number" },
+    {"id": 7, "key": "9", "class": "number" },
+    {"id": 8, "key": "*", "class": "f-key" },
+    {"id": 9, "key": "4", "class": "number" },
+    {"id": 10, "key": "5", "class": "number" },
+    {"id": 11, "key": "6", "class": "number" },
+    {"id": 12, "key": "-", "class": "f-key" },
+    {"id": 13, "key": "1", "class": "number"},
+    {"id": 14, "key": "2", "class": "number" },
+    {"id": 15, "key": "3", "class": "number" },
+    {"id": 16, "key": "+", "class": "f-key" },
+    {"id": 17, "key": "00", "class": "number" },
+    {"id": 18, "key": "0", "class": "number" },
+    {"id": 19, "key": ".", "class": "number" },
+    {"id": 20, "key": "=", "class": "f-key" }
+]
