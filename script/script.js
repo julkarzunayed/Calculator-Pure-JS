@@ -1,4 +1,4 @@
-const data = fetch("../keys.json")
+const data = fetch("https://raw.githubusercontent.com/julkarzunayed/Calculator-Pure-JS/refs/heads/main/keys.json")
     .then(res => res.json())
     .then(keys => displayKeys(keys))
 
