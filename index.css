@@ -53,6 +53,9 @@ main h1>span{
     
     
 } */
+
+
+
 .number{
     border: solid 1px lightgray;
     background: rgb(178, 255, 255);
@@ -63,6 +66,14 @@ main h1>span{
 
 .number:hover, .f-key:hover{
     cursor:pointer;
+    box-shadow: 0 0px 10px 0 rgb(116, 116, 116);
+}
+
+.number:active {
+    background: rgb(139, 197, 197);
+}
+.f-key:active {
+    background:  rgb(187, 117, 38);
 }
 
 #text-box{
