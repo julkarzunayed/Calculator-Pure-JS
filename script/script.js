@@ -42,7 +42,14 @@ function liAdd() {
 
 let textHolder = ''
 
-function textareaUpdater() {
+function textareaUpdater(result) {
+    if(isNaN(result)){
+        document.getElementById("text-box").innerText = "Syntax error"
+        console.log("trigard")
+        textHolder = ''
+        return;
+    }
+    console.log(textHolder)
     document.getElementById("text-box").innerText = textHolder
     // document.getElementById("text-area-box").value = textHolder
 }
@@ -72,7 +79,7 @@ function calculate() {
 
     if (string2.length >= 2) {
         const stringF = textHolder.split("")
-        console.log(stringF)
+        // console.log(stringF)
 
         for (let i = 0; i < stringF.length; i++) {
             const first = Number(string2[0])
@@ -100,7 +107,7 @@ function calculate() {
                 //     string2.shift()
                 //     string2.unshift(sum)
                 // }
-                console.log(string2, "kdjkfjdk", first, second)
+                // console.log(string2, "kdjkfjdk", first, second)
             }
             else if (stringF[i] === "+") {
                 sum = first + second;
@@ -127,6 +134,9 @@ function calculate() {
 
         }
         console.log(sum)
+        if(isNaN(sum)){
+            console.log("tijk")
+        }
         return sum;
     }
 }
@@ -134,29 +144,29 @@ function calculate() {
 function textContainerUpdate(text) {
     if (text === "C") {
         textHolder = ""
-        textareaUpdater();
+        textareaUpdater(0);
         return;
     }
     if (text === "=") {
         const result = calculate()
         textHolder = result
-        textareaUpdater();
+        textareaUpdater(result);
         return;
     }
     if(text === "%"){
         const result = calculate()
         textHolder = `${result/100}`
-        textareaUpdater();
+        textareaUpdater(0);
         return;
     }
     textHolder += text
-    textareaUpdater()
+    textareaUpdater(0)
 
 }
 function backSpace() {
     const newTextHolder = textHolder.slice(0, -1);
     textHolder = newTextHolder;
-    textareaUpdater()
+    textareaUpdater(0)
 }
 
 const handleKeys = () => {
@@ -170,7 +180,7 @@ const handleKeys = () => {
             if (key.target.id === "keys-container") {
                 return;
             }
-            console.log(key.target.innerText)
+            // console.log(key.target.innerText)
             textContainerUpdate(key.target.innerText)
         })
 };
@@ -179,7 +189,7 @@ handleKeys()
 
 let string = "12345/*-+6";
 
-console.log(!/[/*-+-]/.test(string))
+// console.log(!/[/*-+-]/.test(string))
 // console.log(string.match(""))
 // console.log(string.includes())
 
@@ -253,6 +263,8 @@ for (const num of string2) {
 // }
 
 // console.log("test", 1  0)
-console.log("test", Number("1.252525"))
+// console.log("test", Number("1.252525"))
 
+const nan = Infinity;
+console.log(typeof Infinity)
 
