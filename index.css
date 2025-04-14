@@ -4,20 +4,22 @@ body{
     justify-items: center;
     align-items: center;
     height: 95vh;
-    border: solid tomato 1px;
+    /* border: solid tomato 1px; */
     font-family: "Poppins", sans-serif;
 }
 main{
     /* width: 400px; */
     /* max-width: 400px; */
     min-width: 350px;
-    height: 80%;
+    aspect-ratio: 1/2;
+    /* height: 80%; */
     margin: auto;
     background: white;
     border-radius: 20px;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    /* border: solid tomato 2px; */
 }
 
 main h1{
@@ -58,6 +60,11 @@ main h1>span{
     border-radius: 5px;
     margin: 2px;
 }
+
+.number:hover, .f-key:hover{
+    cursor:pointer;
+}
+
 #text-box{
     border: solid 1px;
     flex-grow: 1;
@@ -85,4 +92,23 @@ main h1>span{
     font-size: 20px;
     padding: 2%;
     /* border: none; */
+}
+
+@media (max-width: 500px ) {
+    main{
+        /* display: none; */
+        /* border: solid 2px tomato; */
+        min-width: auto;
+        width: 80%;
+        height: 90%;
+    }
+}
+@media (max-width: 6px ) {
+    main{
+        /* display: none; */
+        /* border: solid 2px tomato; */
+        min-width: auto;
+        width: 80%;
+        height: 90%;
+    }
 }
