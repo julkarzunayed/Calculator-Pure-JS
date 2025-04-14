@@ -6,7 +6,7 @@ const data = fetch("https://raw.githubusercontent.com/julkarzunayed/Calculator-P
 const displayKeys = (keys) => {
     const keysContainer = document.getElementById("keys-container");
 
-    console.log(keys)
+    // console.log(keys)
     for (const key of keys) {
         const div = document.createElement("div")
         div.innerHTML = `
@@ -23,7 +23,7 @@ const displayKeys = (keys) => {
 function liAdd() {
 
     const back = document.getElementById("key-")
-    console.log(back)
+    // console.log(back)
     // const i = document.createElement("i")
     // i.classList.add("fa-solid", "fa-delete-left")
     // // back.appendChild(i)
@@ -45,11 +45,11 @@ let textHolder = ''
 function textareaUpdater(result) {
     if(isNaN(result)){
         document.getElementById("text-box").innerText = "Syntax error"
-        console.log("trigard")
+        // console.log("trigard")
         textHolder = ''
         return;
     }
-    console.log(textHolder)
+    // console.log(textHolder)
     document.getElementById("text-box").innerText = textHolder
     // document.getElementById("text-area-box").value = textHolder
 }
@@ -114,29 +114,26 @@ function calculate() {
                 string2.shift()
                 string2.shift()
                 string2.unshift(sum)
-                console.log(string2)
+                // console.log(string2)
             }
             if (stringF[i] === "/") {
                 sum = first / second;
                 string2.shift()
                 string2.shift()
                 string2.unshift(sum)
-                console.log(string2)
+                // console.log(string2)
             }
             if (stringF[i] === "*") {
                 sum = first * second;
                 string2.shift()
                 string2.shift()
                 string2.unshift(sum)
-                console.log(string2)
+                // console.log(string2)
             }
             
 
         }
-        console.log(sum)
-        if(isNaN(sum)){
-            console.log("tijk")
-        }
+        
         return sum;
     }
 }
@@ -265,6 +262,6 @@ for (const num of string2) {
 // console.log("test", 1  0)
 // console.log("test", Number("1.252525"))
 
-const nan = Infinity;
-console.log(typeof Infinity)
+// const nan = Infinity;
+// console.log(typeof Infinity)
 
