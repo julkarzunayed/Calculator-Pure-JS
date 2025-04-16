@@ -1,5 +1,5 @@
 [
-    {"id": 1, "key": "C", "class": "f-key" },
+    {"id": 1, "key": "C", "class": "c-key" },
     {"id": 2, "key": "&#8592;", "class": "f-key" },
     {"id": 3, "key": "%", "class": "f-key" },
     {"id": 4, "key": "/", "class": "f-key" },

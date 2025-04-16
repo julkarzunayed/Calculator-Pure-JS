@@ -1,3 +1,7 @@
+// const data = fetch("../keys.json")
+//     .then(res => res.json())
+//     .then(keys => displayKeys(keys));
+
 const data = fetch("https://raw.githubusercontent.com/julkarzunayed/Calculator-Pure-JS/refs/heads/main/keys.json")
     .then(res => res.json())
     .then(keys => displayKeys(keys))
@@ -20,21 +24,9 @@ const displayKeys = (keys) => {
 
 }
 
-function liAdd() {
 
-    const back = document.getElementById("key-")
-    // console.log(back)
-    // const i = document.createElement("i")
-    // i.classList.add("fa-solid", "fa-delete-left")
-    // // back.appendChild(i)
-    // back.innerHTML = `
-    // <i class="fa-solid fa-delete-left"></i>
-    // `
-}
 
-// liAdd()
-
-// const textContainer = document.getElementById("text-box")
+// const textContainer = document.getElementById("text-box-p")
 //     const textAria = document.createElement("textarea")
 //     textAria.classList.add("text-area-box")
 //     // textAria.id.add("text-area-box")
@@ -44,13 +36,14 @@ let textHolder = ''
 
 function textareaUpdater(result) {
     if(isNaN(result)){
-        document.getElementById("text-box").innerText = "Syntax error"
+        document.getElementById("text-box-p").innerText = "Syntax error"
         // console.log("trigard")
         textHolder = ''
         return;
     }
     // console.log(textHolder)
-    document.getElementById("text-box").innerText = textHolder
+
+    document.getElementById("text-box-p").innerText = textHolder
     // document.getElementById("text-area-box").value = textHolder
 }
 
