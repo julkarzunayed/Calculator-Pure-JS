@@ -26,11 +26,7 @@ const displayKeys = (keys) => {
 
 
 
-// const textContainer = document.getElementById("text-box-p")
-//     const textAria = document.createElement("textarea")
-//     textAria.classList.add("text-area-box")
-//     // textAria.id.add("text-area-box")
-//     textContainer.appendChild(textAria)
+
 
 let textHolder = ''
 
